@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,
+            //スクロール方向を逆転,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -184,10 +184,10 @@
 
         SCROLL {
             bindings = <
-&kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp KP_PLUS                     &trans    &kp LC(LG(LEFT_ARROW))  &kp NUMBER_8  &kp LC(LG(RIGHT))  &trans
-&kp KP_SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS                    &trans    &kp NUMBER_4            &kp NUMBER_5  &kp NUMBER_6       &trans
-&kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER                       &kp HOME  &kp PAGE_DOWN           &kp END       &kp PG_UP          &kp ENTER
-&kp QUESTION     &kp DOT       &kp N0        &trans        &trans        &trans    &trans  &trans                            &trans        &trans             &trans
+&kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp KP_PLUS                     &trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT))  &trans
+&kp KP_SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS                    &trans    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans
+&kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER                       &kp HOME  &kp PAGE_DOWN           &kp END         &kp PG_UP          &kp ENTER
+&kp QUESTION     &kp DOT       &kp N0        &trans        &trans        &trans    &trans  &trans                            &trans          &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
